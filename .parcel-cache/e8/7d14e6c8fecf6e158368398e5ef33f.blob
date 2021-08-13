@@ -1,0 +1,15 @@
+window.dom = {
+    find(className) {
+        return document.querySelectorAll(className)
+    },
+    style(node, attr, attrValue) {
+        node.style[attr] = attrValue
+    },
+    each(nodeList, callback) {
+        for (let i = 0; i < nodeList.length; i++) {
+            callback(nodeList[i])
+        }
+
+    }
+}
+
